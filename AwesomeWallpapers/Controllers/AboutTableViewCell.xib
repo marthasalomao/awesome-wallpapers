@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="210" id="KGk-i7-Jjw" customClass="AboutTableViewCell" customModule="AwesomeWallpapers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eucalyptus" translatesAutoresizingMaskIntoConstraints="NO" id="y4a-wf-GW8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
+                        <viewLayoutGuide key="safeArea" id="lWP-sC-fQG"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallpaper Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCC-V1-CSj">
+                        <rect key="frame" x="29" y="131" width="131" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle Wallpaper Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-2l-wPM">
+                        <rect key="frame" x="29" y="160" width="159.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qxI-2l-wPM" firstAttribute="leading" secondItem="xMm-DE-OFW" secondAttribute="leading" constant="29" id="4wd-je-GJR"/>
+                    <constraint firstItem="qCC-V1-CSj" firstAttribute="leading" secondItem="xMm-DE-OFW" secondAttribute="leading" constant="29" id="D2f-t9-wvu"/>
+                    <constraint firstItem="qxI-2l-wPM" firstAttribute="top" secondItem="qCC-V1-CSj" secondAttribute="bottom" constant="8" id="HUU-9l-b90"/>
+                    <constraint firstItem="xMm-DE-OFW" firstAttribute="bottom" secondItem="qxI-2l-wPM" secondAttribute="bottom" constant="32.5" id="Kmw-Vc-GFz"/>
+                    <constraint firstAttribute="bottom" secondItem="y4a-wf-GW8" secondAttribute="bottom" id="M2Y-wK-ouU"/>
+                    <constraint firstItem="y4a-wf-GW8" firstAttribute="top" secondItem="xMm-DE-OFW" secondAttribute="top" id="Xkx-Uc-ZGc"/>
+                    <constraint firstItem="y4a-wf-GW8" firstAttribute="leading" secondItem="xMm-DE-OFW" secondAttribute="leading" id="Ytg-hf-gys"/>
+                    <constraint firstItem="y4a-wf-GW8" firstAttribute="trailing" secondItem="xMm-DE-OFW" secondAttribute="trailing" id="iBN-JE-sV0"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="xMm-DE-OFW"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivWallpaper" destination="y4a-wf-GW8" id="4Em-42-SMJ"/>
+                <outlet property="lbWallpaperName" destination="qCC-V1-CSj" id="qOT-Gw-sHL"/>
+                <outlet property="lbWallpaperSubtitle" destination="qxI-2l-wPM" id="UAf-bl-2y8"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eucalyptus" width="1080" height="1619"/>
+    </resources>
+</document>
