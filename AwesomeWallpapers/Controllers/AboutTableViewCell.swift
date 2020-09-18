@@ -6,6 +6,7 @@
 //  Copyright © 2020 Martha Salomão de Moraes. All rights reserved.
 //
 
+import Kingfisher
 import UIKit
 
 class AboutTableViewCell: UITableViewCell {
@@ -20,7 +21,9 @@ class AboutTableViewCell: UITableViewCell {
     func prepare(infoWallpaper: InfoWallpaper) {
         lbWallpaperName.text = infoWallpaper.user?.name
         lbWallpaperSubtitle.text = infoWallpaper.description ?? "Unknown"
-        
+        guard let imageURL = infoWallpaper.urls?.regular else { return }
+        let url = URL(string: imageURL)
+        ivWallpaper.kf.setImage(with: url)
     }
     
 }
