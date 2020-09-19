@@ -13,10 +13,13 @@
 		F50FCEB0250EDD9C0041B417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50FCEAE250EDD9C0041B417 /* Main.storyboard */; };
 		F50FCEB2250EDD9C0041B417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50FCEB1250EDD9C0041B417 /* Assets.xcassets */; };
 		F50FCEB5250EDD9C0041B417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50FCEB3250EDD9C0041B417 /* LaunchScreen.storyboard */; };
-		F50FCEC3250EE30B0041B417 /* unsplash.json in Resources */ = {isa = PBXBuildFile; fileRef = F50FCEC2250EE30B0041B417 /* unsplash.json */; };
 		F50FCECB250EE6280041B417 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */; };
 		F50FCECC250EE6280041B417 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */; };
-		F56F5A2C25106136001F55AA /* InfoWallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F5A2B25106136001F55AA /* InfoWallpaper.swift */; };
+		F56F5A2C25106136001F55AA /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F5A2B25106136001F55AA /* Wallpaper.swift */; };
+		F598E23B251591DF00FDE6FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E23A251591DF00FDE6FE /* Router.swift */; };
+		F598E23D251591F200FDE6FE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E23C251591F200FDE6FE /* Service.swift */; };
+		F598E23F2515A3A300FDE6FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E23E2515A3A300FDE6FE /* Result.swift */; };
+		F598E2412515A3B000FDE6FE /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E2402515A3B000FDE6FE /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +33,13 @@
 		F50FCEB1250EDD9C0041B417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50FCEB4250EDD9C0041B417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F50FCEB6250EDD9C0041B417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F50FCEC2250EE30B0041B417 /* unsplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unsplash.json; sourceTree = "<group>"; };
 		F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
-		F56F5A2B25106136001F55AA /* InfoWallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWallpaper.swift; sourceTree = "<group>"; };
+		F56F5A2B25106136001F55AA /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		F598E23A251591DF00FDE6FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F598E23C251591F200FDE6FE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F598E23E2515A3A300FDE6FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F598E2402515A3B000FDE6FE /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 		F500B7442511329D00F3D042 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F50FCEAC250EDD9C0041B417 /* ViewController.swift */,
+				F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */,
+				F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */,
 				F50FCEAE250EDD9C0041B417 /* Main.storyboard */,
 				F50FCEB3250EDD9C0041B417 /* LaunchScreen.storyboard */,
 			);
@@ -97,39 +106,31 @@
 			children = (
 				F50FCEAA250EDD9C0041B417 /* AppDelegate.swift */,
 				F56F5A2D2510613C001F55AA /* Models */,
-				F50FCEC4250EE31C0041B417 /* Files */,
+				F598E239251591B000FDE6FE /* Network */,
 				F500B7442511329D00F3D042 /* Views */,
-				F50FCEC1250EE1690041B417 /* Controllers */,
 				F50FCEB1250EDD9C0041B417 /* Assets.xcassets */,
 				F50FCEB6250EDD9C0041B417 /* Info.plist */,
 			);
 			path = AwesomeWallpapers;
 			sourceTree = "<group>";
 		};
-		F50FCEC1250EE1690041B417 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F50FCEAC250EDD9C0041B417 /* ViewController.swift */,
-				F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */,
-				F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F50FCEC4250EE31C0041B417 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				F50FCEC2250EE30B0041B417 /* unsplash.json */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
 		F56F5A2D2510613C001F55AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F56F5A2B25106136001F55AA /* InfoWallpaper.swift */,
+				F56F5A2B25106136001F55AA /* Wallpaper.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F598E239251591B000FDE6FE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F598E23A251591DF00FDE6FE /* Router.swift */,
+				F598E23C251591F200FDE6FE /* Service.swift */,
+				F598E23E2515A3A300FDE6FE /* Result.swift */,
+				F598E2402515A3B000FDE6FE /* CustomError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +198,6 @@
 				F50FCEB2250EDD9C0041B417 /* Assets.xcassets in Resources */,
 				F50FCECC250EE6280041B417 /* AboutTableViewCell.xib in Resources */,
 				F50FCEB0250EDD9C0041B417 /* Main.storyboard in Resources */,
-				F50FCEC3250EE30B0041B417 /* unsplash.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +248,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50FCECB250EE6280041B417 /* AboutTableViewCell.swift in Sources */,
+				F598E2412515A3B000FDE6FE /* CustomError.swift in Sources */,
 				F50FCEAD250EDD9C0041B417 /* ViewController.swift in Sources */,
-				F56F5A2C25106136001F55AA /* InfoWallpaper.swift in Sources */,
+				F598E23B251591DF00FDE6FE /* Router.swift in Sources */,
+				F56F5A2C25106136001F55AA /* Wallpaper.swift in Sources */,
+				F598E23F2515A3A300FDE6FE /* Result.swift in Sources */,
+				F598E23D251591F200FDE6FE /* Service.swift in Sources */,
 				F50FCEAB250EDD9C0041B417 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

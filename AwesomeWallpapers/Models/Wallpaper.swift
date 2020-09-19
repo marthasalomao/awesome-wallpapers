@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct InfoWallpaper: Codable {
+struct Wallpaper: Codable {
+    var results: [Results]
+}
+
+struct Results: Codable {
     var urls: Urls?
     var user: User?
     let description: String?

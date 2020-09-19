@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Awesome Wallpapers " largeTitleDisplayMode="always" id="272-S0-T9b"/>
+                    <navigationItem key="navigationItem" title="Awesome Wallpapers " id="272-S0-T9b"/>
                     <connections>
                         <outlet property="tableView" destination="UeJ-ba-L1S" id="O5U-0F-VJ3"/>
                     </connections>

@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    var infos: [InfoWallpaper] = []
+    var infos: [Results] = []
+    var service = Service()
     
     // MARK: - Overrides
     override func viewDidLoad() {
@@ -23,22 +24,21 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "AboutTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "cell")
-        loadInfoWallpaper()
+        loadWallpapers()
     }
     
     // MARK: - Methods
-    func loadInfoWallpaper() {
-        let fileURL = Bundle.main.url(forResource: "unsplash.json", withExtension: nil)
-        guard let url = fileURL else { return }
-        do {
-            let jsonData = try Data(contentsOf: url)
-            infos = try JSONDecoder().decode([InfoWallpaper].self, from: jsonData)
-        } catch {
-            print(error.localizedDescription)
+    func loadWallpapers() {
+        service.request(router: Router.photos) { (result: Result<Wallpaper>) in
+            switch result {
+            case .success(let wallpaper):
+                self.infos = wallpaper.results
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
         }
     }
-
-
 }
 
  extension ViewController: UITableViewDelegate, UITableViewDataSource {

@@ -18,7 +18,7 @@ class AboutTableViewCell: UITableViewCell {
     
 
     // MARK: - Methods
-    func prepare(infoWallpaper: InfoWallpaper) {
+    func prepare(infoWallpaper: Results) {
         lbWallpaperName.text = infoWallpaper.user?.name
         lbWallpaperSubtitle.text = infoWallpaper.description ?? "Unknown"
         guard let imageURL = infoWallpaper.urls?.regular else { return }
