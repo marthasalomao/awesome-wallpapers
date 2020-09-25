@@ -63,7 +63,10 @@ class ViewController: UIViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let wallpaper = infos[indexPath.row]
+        let finalwallpaper = WallpaperViewController(wallpaper: wallpaper)
+        navigationController?.pushViewController(finalwallpaper, animated: true)
+
     }
     
 }

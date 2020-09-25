@@ -15,6 +15,8 @@
 		F50FCEB5250EDD9C0041B417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50FCEB3250EDD9C0041B417 /* LaunchScreen.storyboard */; };
 		F50FCECB250EE6280041B417 /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */; };
 		F50FCECC250EE6280041B417 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */; };
+		F511255B2517E0040062ED9C /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51125592517E0040062ED9C /* WallpaperViewController.swift */; };
+		F511255C2517E0040062ED9C /* WallpaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511255A2517E0040062ED9C /* WallpaperViewController.xib */; };
 		F56F5A2C25106136001F55AA /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56F5A2B25106136001F55AA /* Wallpaper.swift */; };
 		F598E23B251591DF00FDE6FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E23A251591DF00FDE6FE /* Router.swift */; };
 		F598E23D251591F200FDE6FE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F598E23C251591F200FDE6FE /* Service.swift */; };
@@ -35,6 +37,8 @@
 		F50FCEB6250EDD9C0041B417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F50FCEC9250EE6280041B417 /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 		F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
+		F51125592517E0040062ED9C /* WallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
+		F511255A2517E0040062ED9C /* WallpaperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallpaperViewController.xib; sourceTree = "<group>"; };
 		F56F5A2B25106136001F55AA /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
 		F598E23A251591DF00FDE6FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		F598E23C251591F200FDE6FE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				F50FCECA250EE6280041B417 /* AboutTableViewCell.xib */,
 				F50FCEAE250EDD9C0041B417 /* Main.storyboard */,
 				F50FCEB3250EDD9C0041B417 /* LaunchScreen.storyboard */,
+				F51125592517E0040062ED9C /* WallpaperViewController.swift */,
+				F511255A2517E0040062ED9C /* WallpaperViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			files = (
 				F50FCEB5250EDD9C0041B417 /* LaunchScreen.storyboard in Resources */,
 				F50FCEB2250EDD9C0041B417 /* Assets.xcassets in Resources */,
+				F511255C2517E0040062ED9C /* WallpaperViewController.xib in Resources */,
 				F50FCECC250EE6280041B417 /* AboutTableViewCell.xib in Resources */,
 				F50FCEB0250EDD9C0041B417 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F511255B2517E0040062ED9C /* WallpaperViewController.swift in Sources */,
 				F50FCECB250EE6280041B417 /* AboutTableViewCell.swift in Sources */,
 				F598E2412515A3B000FDE6FE /* CustomError.swift in Sources */,
 				F50FCEAD250EDD9C0041B417 /* ViewController.swift in Sources */,
